@@ -1,0 +1,480 @@
+
+/*reset code */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* My code */
+body {
+  background-color: rgba(0,0,0,0.9) !important;
+  margin: 0;
+  color: #fff;
+  font-family: fantasy;
+}
+
+#main::after {
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://www.aviationtoday.com/wp-content/uploads/2020/03/elon-musk_sat20.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(5px);
+  --webkit-filter: blur(5px);
+  transition: all 1000ms;
+}
+#main:hover::after {
+  filter: blur(0px);
+  --webkit-filter: blur(0px);
+}
+
+#main:hover #img-div {
+  filter: blur(2px);
+  --webkit-filter: blur(2px);
+  transition: all 1000ms;
+}
+
+#img-div {
+  position: absolute;
+  z-index: 1;
+  align-content: center;
+}
+
+#img-div #image {
+  height: 80px;
+  width: 500px;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 350px;
+  margin-left: 80px;
+  text-align: center;
+  transition: all 1000ms;
+  box-shadow: 0 10px 20px rgba(6, 10, 0, 0.27), 0 6px 6px rgba(6, 10, 0, 0.27);
+}
+
+#img-div #title h4{
+  font-size: 40px;
+  margin-top: 1rem;
+  font-family: 'Arvo';
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px #a19c9c;
+}
+
+#img-div #img-caption {
+  line-height: 1.7;
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Dancing Script';
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px #857d7d;
+}
+
+/*Section */
+
+/*information */
+
+.information{
+  color: pink;
+  padding-top: 2rem;
+}
+
+.style {
+  text-align: center;
+  font-family: 'Lora', serif;
+  text-shadow: 2px 2px 8px #ddd3d3;
+}
+
+.style1{
+  text-align: center;
+  font-family: 'Righteous';
+  text-shadow: 4px 4px 16px #857d7d;
+}
+
+.box-1 {
+  color: rgba(254, 254, 254, 0.92);
+  border-radius: 15px;
+  margin-left: 40px;
+  box-shadow: 0 10px 20px rgba(195, 34, 34, 0.62), 0 6px 6px rgba(195, 34, 34, 0.62);
+}
+
+.box-2 {
+  color: rgba(254, 254, 254, 0.92);
+  border-radius: 15px;
+  margin-left: 65px;
+  box-shadow: 0 10px 20px rgba(195, 34, 34, 0.62), 0 6px 6px rgba(195, 34, 34, 0.62);
+}
+
+.box-3 {
+  color: rgba(254, 254, 254, 0.92);
+  border-radius: 15px;
+  margin-left: 75px;
+  box-shadow: 0 10px 20px rgba(195, 34, 34, 0.62), 0 6px 6px rgba(195, 34, 34, 0.62);
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60077, 0 0 40px #e60077, 0 0 50px #e60077, 0 0 60px #e60077, 0 0 70px #e60077;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #1306af, 0 0 40px #1306af, 0 0 50px #1306af, 0 0 60px #1306af, 0 0 70px #1306af, 0 0 80px #1306af;
+  }
+}
+
+.container {
+  content: ' ';
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.item {
+  content: '';
+  height: 500px;
+  width: 100%;
+}
+
+.filter{
+  filter: grayscale(100%);
+}
+
+.Zip2 h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.Zip2 p{
+  font-family: 'Poiret One';
+  font-weight:800;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.paypal h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  color: rgb(0, 10, 255);
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.paypal p{
+  font-weight:800;
+  font-family: 'Poiret One';
+  margin-bottom: 15px;
+  color: rgb(0, 10, 255);
+  text-shadow: 2px 2px 8px #111;
+}
+
+.spacex h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.spacex p{
+  font-weight:800;
+  font-family: 'Poiret One';
+  text-shadow: 2px 2px 8px #111;
+}
+
+.Tesla h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: rgb(255, 0, 38);
+  text-shadow: 2px 2px 8px #111;
+}
+
+.Tesla p {
+  font-family: 'Poiret One';
+  font-weight:800;
+  margin-bottom: 25px;
+  color: rgb(255, 0, 38);
+  text-shadow: 2px 2px 8px #111;
+}
+
+.solar_city h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.solar_city p{
+  font-family: 'Poiret One';
+  font-weight:800;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.HyperLoop h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  color: rgb(31, 82, 149);
+  text-shadow: 2px 2px 8px #111;
+}
+
+.HyperLoop p{
+  font-family: 'Poiret One';
+  color: rgb(31, 82, 149);
+  font-weight:800;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.openAI h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  color: rgba(10, 100, 254, 0.78);
+  text-shadow: 2px 2px 8px #111;
+}
+
+.openAI p{
+  font-weight:800;
+  font-family: 'Poiret One';
+  color: rgba(10, 100, 254, 0.78);
+  text-shadow: 2px 2px 8px #111;
+}
+
+.neuralink h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.neuralink p{
+  font-weight:800;
+  font-family: 'Poiret One';
+  text-shadow: 2px 2px 8px #111;
+}
+
+.boring h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  color: rgb(43, 37, 51);
+  text-shadow: 2px 2px 8px #111;
+}
+
+.boring p{
+  font-weight:800;
+  color: rgb(43, 37, 51);
+  font-family: 'Poiret One';
+  text-shadow: 2px 2px 8px #111;
+}
+
+.dance h5{
+  font-family: 'Fondamento';
+  font-size: 26px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.dance p{
+  font-weight:800;
+  font-family: 'Poiret One';
+  text-shadow: 2px 2px 8px #111;
+}
+
+
+@media (max-width: 760px) {
+  #main::after{
+    height: 100vh;
+  }
+  #img-div{
+    top: 5%;
+    margin-top: 5px;
+  }
+  #img-div #image {
+    height: 50px;
+    width: 100px;
+    margin-top: 320px;
+    margin-left: 20px;
+  }
+  #img-div #title h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #img-div #img-caption {
+    font-size: 1.5rem;
+  }
+  /* Section */
+  .glow {
+    font-size: 40px;
+  }
+  .item {
+    content: '';
+    height: 50vh;
+  }
+}
+
+/*footer */
+.details {
+  color: indigo;
+  list-style: none;
+}
+
+a {
+  font-family: 'Fondamento';
+  font-size: 16px;
+}
+
+footer div div div h3{
+  font-size: 30px;
+}
+
+.change {
+  color: #0833b5;
+  font-family: cursive;
+  text-align: center;
+  background-color: purple;
+  border-radius: 2px;
+  font-size: 26px;
+}
+
+.Products{
+  margin-left: 40px;
+}
+
+.links{
+  margin-left: 60px;
+}
+
+.Follow{
+  margin-left: 80px;
+}
+
+.font-change{
+  font-family: 'Concert One';
+}
+
+@media (max-width: 760px){
+  .Products{
+    margin-left: 20px;
+  }
+
+  .links{
+    margin-left: 20px;
+  }
+
+  .Follow{
+    margin-left: 20px;
+  }
+}
+
+.qoutes {
+  color: #8a7d76;
+  text-align: right;
+}
